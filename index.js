@@ -198,3 +198,49 @@ firstGameContainer.append(firstGameName);
 // do the same for the runner up item
 const secondGameName = secondGame.name;
 secondGameContainer.append(secondGameName);
+
+
+/*************************************************************************************
+ * Add-ons to the website
+*/
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-btn');
+
+searchButton.addEventListener('click', () => {
+    const searchText = searchInput.value.toLowerCase();
+
+    if (searchText === '') {
+        // If search text is empty, display all games
+        displayGames(GAMES_JSON);
+    } else {
+        // Otherwise, filter and display matching games
+        const filteredGames = GAMES_JSON.filter(game => 
+            game.name.toLowerCase().includes(searchText)
+        );
+        displayGames(filteredGames);
+    }
+});
+
+function displayGames(games) {
+    gamesContainer.innerHTML = ''; // Clear existing games
+
+    games.forEach(game => {
+        const gameCard = document.createElement('div');
+        gameCard.classList.add('game-card'); // Assuming you have a CSS class for styling the game cards
+        gameCard.innerHTML = `
+            <h3>${game.name}</h3>
+            <p>${game.description}</p>
+            <img src="${game.img}" alt="${game.name}" class="game-img">
+        `;
+        gamesContainer.appendChild(gameCard);
+    });
+
+    // If no games match the search query, show a message
+    if (games.length === 0) {
+        gamesContainer.innerHTML = '<p>No games found.</p>';
+    }
+}
+
+// Initial display of all games
+displayGames(GAMES_JSON);
+

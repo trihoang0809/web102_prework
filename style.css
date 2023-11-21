@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: rgb(255, 127, 80);
+    padding-top: 80px;
 }
 
 #tentacles {
@@ -10,8 +11,12 @@ body {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    background-color: lightblue;
+    background-color: rgb(0, 128, 128);
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -19,9 +24,19 @@ body {
     margin-top: -10px;
 }
 
+.header-text {
+    margin-right: auto;
+}
+
+nav a {
+    padding: 5px 10px; /* Vertical and horizontal padding */
+    text-decoration: none;
+    color: rgb(255, 127, 80);
+}
+
 .stats-container {
     display: flex;
-    color: blue;
+    color: rgb(0, 128, 128);
     align-items: center;
 }
 
@@ -31,7 +46,7 @@ body {
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #ffffff;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -74,9 +89,75 @@ body {
 }
 
 button {
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     font-family: 'Cabin';
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#search-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    padding: 5px; /* Adjust as needed */
+}
+
+#search-input {
+    margin-right: 5px; /* Space between input and button */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#stats, #our-games-section, #start {
+    scroll-margin-top: 120px; 
+}
+
+h2 {
+    color: rgb(0, 128, 128);
+}
+
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Initially hide the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Background color for dropdown */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1;
+}
+
+/* Style for links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for hovering over items in dropdown */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
