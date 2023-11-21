@@ -19,6 +19,7 @@ The following **optional** features are implemented:
 
 * [x] Ability to search for a specific game
 * [x] Navbar to help with navigating
+* [x] Fixed position navbar
 * [x] Appealing color theme
 * [x] Interactive buttons
 
@@ -26,10 +27,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/trihoang0809/web102_prework/blob/main/seamonstercrowdfunding%2014.40.10.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LiceCap 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -37,11 +38,11 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It has been a while since I last worked with HTML and CSS, so I had to brush up. JavaScript functions such as filter and reduce were also new to me, but they were really interesting and useful. I also had to look up the syntax for adding some functionalities (such as interactive buttons and navbar). Overall, I am really proud of my product!
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Tri Hoang]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
