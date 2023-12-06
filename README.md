@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://github.com/trihoang0809/web102_prework/blob/main/seamonstercrowdfunding%2014.40.10.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/trihoang0809/web102_prework/blob/main/seamonstercrowdfunding.gif#:~:text=package.json-,seamonstercrowdfunding,-.gif' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap 
